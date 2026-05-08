@@ -26,8 +26,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Open Lovable v3",
-  description: "Re-imagine any website in seconds with AI-powered website builder.",
+  title: "Biz Boost AI Builder",
+  description: "Build.Brand.Dominate. AI-powered website builder that creates stunning websites with your brand's style.",
 };
 
 export default function RootLayout({

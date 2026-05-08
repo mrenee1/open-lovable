@@ -458,7 +458,7 @@ export default function HomePage() {
                             >
                               <div
                                 className={`overlay transition-opacity ${extendBrandStyles ? 'opacity-100' : 'opacity-0'}`}
-                                style={{ background: 'color(display-p3 0.9059 0.3294 0.0784)', backgroundColor: '#FA4500' }}
+                                style={{ background: 'var(--bizboost-primary)' }}
                               />
                               <div
                                 className="top-[2px] left-[2px] transition-all absolute rounded-full bg-accent-white"
@@ -498,7 +498,7 @@ export default function HomePage() {
                                 onClick={() => setSelectedStyle(style.id)}
                                 className={`
                                   ${selectedStyle === style.id
-                                    ? 'bg-heat-100 hover:bg-heat-200 flex items-center justify-center button relative text-label-medium button-primary group/button rounded-10 p-8 text-accent-white active:scale-[0.995] border-0'
+                                    ? 'bg-bizboost-primary hover:bg-bizboost-primary-90 flex items-center justify-center button relative text-label-medium button-primary group/button rounded-10 p-8 text-accent-white active:scale-[0.995] border-0'
                                     : 'border-gray-200 hover:border-gray-300 bg-white text-gray-700 py-3.5 px-4 rounded text-xs font-medium border text-center'
                                   }
                                   transition-all
