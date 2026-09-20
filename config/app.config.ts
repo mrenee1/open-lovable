@@ -48,6 +48,34 @@ export const appConfig = {
     workingDirectory: '/home/user/app',
   },
   
+  // Docker Sandbox Configuration (local Docker daemon)
+  docker: {
+    // Container image used for sandboxes
+    image: process.env.DOCKER_SANDBOX_IMAGE || 'node:22',
+
+    // Sandbox lifetime in minutes (0 = never auto-remove)
+    timeoutMinutes: 60,
+
+    get timeoutMs() {
+      return this.timeoutMinutes * 60 * 1000;
+    },
+
+    // Vite port inside the container (mapped to a random host port)
+    vitePort: 5173,
+
+    // Host interface the mapped port binds to
+    bindHost: process.env.DOCKER_SANDBOX_BIND_HOST || '127.0.0.1',
+
+    // Hostname used in the preview URL shown to the browser
+    publicHost: process.env.DOCKER_SANDBOX_PUBLIC_HOST || 'localhost',
+
+    // Time to wait for Vite dev server to be ready (in milliseconds)
+    viteStartupDelay: 10000,
+
+    // Working directory in the container
+    workingDirectory: '/home/user/app',
+  },
+
   // AI Model Configuration
   ai: {
     // Default AI model
