@@ -55,6 +55,10 @@ VERCEL_OIDC_TOKEN=auto_generated_by_vercel_env_pull
 # VERCEL_PROJECT_ID=prj_xxxxxxxxx    # Your Vercel project ID
 # VERCEL_TOKEN=vercel_xxxxxxxxxxxx   # Personal access token from Vercel dashboard
 
+# Option 3: Docker Sandbox (local, no API key - requires Docker running)
+# SANDBOX_PROVIDER=docker
+# DOCKER_SANDBOX_IMAGE=node:22
+
 # Option 2: E2B Sandbox
 # E2B_API_KEY=e2b_f5045a365a05c49f947f19e82e35d64fbabfc715
  # https://e2b.dev
