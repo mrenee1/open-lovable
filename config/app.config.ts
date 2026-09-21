@@ -85,7 +85,7 @@ export const appConfig = {
     availableModels: [
       'openai/gpt-5',
       'moonshotai/kimi-k2-instruct-0905',
-      'anthropic/claude-sonnet-4-20250514',
+      'anthropic/claude-sonnet-4-6',
       'google/gemini-3-pro-preview'
     ],
     
@@ -93,7 +93,7 @@ export const appConfig = {
     modelDisplayNames: {
       'openai/gpt-5': 'GPT-5',
       'moonshotai/kimi-k2-instruct-0905': 'Kimi K2 (Groq)',
-      'anthropic/claude-sonnet-4-20250514': 'Sonnet 4',
+      'anthropic/claude-sonnet-4-6': 'Sonnet 4.6',
       'google/gemini-3-pro-preview': 'Gemini 3 Pro (Preview)'
     } as Record<string, string>,
     
